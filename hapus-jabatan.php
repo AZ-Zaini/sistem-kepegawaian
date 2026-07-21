@@ -2,7 +2,7 @@
 session_start();
 require_once 'koneksi.php';
 require_once 'auth.php';
-cek_login();
+isLogin();
 
 if (isset($_GET['id'])) {
     $id = (int) $_GET['id'];
