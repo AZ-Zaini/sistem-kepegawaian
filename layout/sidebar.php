@@ -6,9 +6,11 @@
         <a href="index.php" class="list-group-item list-group-item-action <?= basename($_SERVER['PHP_SELF']) == 'index.php' ? 'active' : ''; ?>">
             <i class="bi bi-grid me-2"></i> Dashboard
         </a>
-        <a href="users.php" class="list-group-item list-group-item-action <?= in_array(basename($_SERVER['PHP_SELF']), ['users.php', 'tambah-user.php']) ? 'active' : ''; ?>">
-            <i class="bi bi-person-fill me-2"></i> Users
+        <?php if (isset($_SESSION['role_name']) && strtolower($_SESSION['role_name']) === 'admin') : ?>
+        <a href="users.php" class="list-group-item list-group-item-action <?= in_array(basename($_SERVER['PHP_SELF']), ['users.php', 'tambah-user.php', 'edit-user.php']) ? 'active' : ''; ?>">
+            <i class="bi bi-person-fill me-2"></i> User
         </a>
+        <?php endif; ?>
         <a href="pegawai.php" class="list-group-item list-group-item-action <?= in_array(basename($_SERVER['PHP_SELF']), ['pegawai.php', 'tambah-pegawai.php', 'edit-pegawai.php']) ? 'active' : ''; ?>">
             <i class="bi bi-people-fill me-2"></i> Data Pegawai
         </a>
