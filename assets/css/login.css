@@ -1,0 +1,25 @@
+body {
+    background-color: #f4f6f8;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-card {
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    background: #fff;
+    width: 100%;
+    max-width: 400px;
+}
+.form-control-custom {
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    border: 1px solid #e5e7eb;
+    font-size: 0.9rem;
+}
+.form-control-custom:focus {
+    border-color: #5d87ff;
+    box-shadow: 0 0 0 0.25rem rgba(93, 135, 255, 0.15);
+}
