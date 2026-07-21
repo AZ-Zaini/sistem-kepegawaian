@@ -1,6 +1,9 @@
 <?php
 session_start();
 require_once 'koneksi.php';
+require_once 'auth.php';
+isLogin();
+cek_role(['admin']);
 
 if (isset($_GET['id'])) {
     $id = (int) $_GET['id'];
