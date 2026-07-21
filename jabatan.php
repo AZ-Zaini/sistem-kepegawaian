@@ -124,7 +124,7 @@ isLogin();
                     const nama = this.getAttribute("data-nama");
 
                     namaTarget.textContent = nama;
-                    confirmDeleteBtn.setAttribute("href", "hapus.php?id=" + id);
+                    confirmDeleteBtn.setAttribute("href", "hapus-jabatan.php?id=" + id);
 
                     const deleteModal = new bootstrap.Modal(document.getElementById("deleteModal"));
                     deleteModal.show();
