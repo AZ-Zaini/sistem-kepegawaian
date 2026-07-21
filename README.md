@@ -1,4 +1,4 @@
-# Sistem Informasi Kepegawaian (HRDash)
+# Sistem Informasi Kepegawaian
 
 Sistem Informasi Kepegawaian berbasis web yang dibangun menggunakan PHP Native dan MySQL. Aplikasi ini dirancang untuk memudahkan pengelolaan data pegawai, data jabatan, serta hak akses user.
 
