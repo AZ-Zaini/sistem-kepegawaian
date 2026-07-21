@@ -3,7 +3,6 @@ session_start();
 require_once 'koneksi.php';
 require_once 'auth.php';
 isLogin();
-cek_role(['admin']);
 
 if (isset($_POST['simpan'])) {
     $nip = mysqli_real_escape_string($koneksi, $_POST['nip']);
