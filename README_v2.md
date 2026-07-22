@@ -18,10 +18,10 @@ Aplikasi ini dilengkapi dengan beberapa fitur utama, antara lain:
    Pengelolaan daftar jabatan dalam instansi untuk dikaitkan dengan data pegawai.
 4. **Manajemen User / Pengguna (CRUD)**  
    - Pengelolaan akun pengguna yang dapat masuk ke sistem.
-   - Enkripsi password menggunakan algoritma `bcrypt` demi keamanan data.
+   - Enkripsi password menggunakan  `hash` untuk keamanan.
    - Pembagian hak akses (*Role-based Access Control*) secara dinamis.
 5. **Autentikasi & Keamanan**  
-   - Pembatasan akses halaman berdasarkan status login (*Session-based authentication*).
+   - Pembatasan akses halaman berdasarkan status login.
    - Pembatasan akses menu tertentu berdasarkan tingkat otorisasi (Role `admin` vs `user`).
 
 ---
