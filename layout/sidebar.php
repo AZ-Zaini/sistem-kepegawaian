@@ -11,11 +11,11 @@
             <i class="bi bi-person-fill me-2"></i> User
         </a>
         <?php endif; ?>
-        <a href="pegawai.php" class="list-group-item list-group-item-action <?= in_array(basename($_SERVER['PHP_SELF']), ['pegawai.php', 'tambah-pegawai.php', 'edit-pegawai.php']) ? 'active' : ''; ?>">
-            <i class="bi bi-people-fill me-2"></i> Data Pegawai
-        </a>
         <a href="jabatan.php" class="list-group-item list-group-item-action <?= in_array(basename($_SERVER['PHP_SELF']), ['jabatan.php', 'tambah-jabatan.php']) ? 'active' : ''; ?>">
             <i class="bi bi-briefcase-fill"></i> Data Jabatan
+        </a>
+        <a href="pegawai.php" class="list-group-item list-group-item-action <?= in_array(basename($_SERVER['PHP_SELF']), ['pegawai.php', 'tambah-pegawai.php', 'edit-pegawai.php']) ? 'active' : ''; ?>">
+            <i class="bi bi-people-fill me-2"></i> Data Pegawai
         </a>
     </div>
     <div class="list-group list-group-flush mb-3">
